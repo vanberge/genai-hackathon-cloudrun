@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><Your Title Here!></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<style>
+	.centered-div {
+  	width: 1200px; /* Set the desired width */
+	  margin: 0 auto; /* Center the div horizontally */
+	}
+	</style>
+	<div class="centered-div">
+	<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  project-id="<your GCP project ID>"
+  agent-id="<Your Chatbot Agent ID>"
+  language-code="en"
+  max-query-length="-1">
+  <df-messenger-chat
+   chat-title="<Your Chatbot title>">
+  </df-messenger-chat>
+</df-messenger>
+<style>
+  df-messenger {
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #f3f6fc;
+    --df-messenger-message-user-background: #d3e3fd;
+    --df-messenger-message-bot-background: #fff;
+  }
+</style>
+</div>
+</body>
+</html>
